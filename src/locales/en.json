@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "submit": {
+    "title": "Submit New Grievance",
+    "subtitle": "Provide clear details so the right department can resolve your issue quickly.",
+    "fieldTitle": "Title",
+    "fieldTitlePlaceholder": "E.g. Broken street light on Main St.",
+    "fieldDescription": "Detailed Description",
+    "fieldDescriptionPlaceholder": "Describe the problem in detail, including when it started...",
+    "fieldAddress": "Address / Location Description",
+    "fieldAddressPlaceholder": "E.g. Near Gate 4, Raja Street, Ward 5",
+    "fieldContact": "Contact Number",
+    "fieldContactPlaceholder": "Your 10-digit mobile number",
+    "fieldDetectLocation": "Detect My GPS Location",
+    "fieldDetecting": "Detecting...",
+    "fieldLocationDetected": "Location Detected",
+    "fieldPhoto": "Attach Photo (optional)",
+    "fieldPhotoHint": "Upload a photo of the grievance for faster classification.",
+    "btnCancel": "Cancel",
+    "btnSubmit": "Submit Grievance",
+    "btnSubmitting": "Submitting...",
+    "successMsg": "Grievance submitted successfully! Redirecting...",
+    "locationError": "Could not detect location. Please enter address manually."
+  },
+  "dashboard": {
+    "citizen": "Citizen Dashboard",
+    "officer": "Officer Dashboard",
+    "admin": "System Overview",
+    "total": "Total Reports",
+    "pending": "Pending",
+    "resolved": "Resolved",
+    "inProgress": "In Progress",
+    "recentGrievances": "Recent Grievances"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "submitGrievance": "Submit Grievance",
+    "myGrievances": "My Grievances",
+    "analytics": "Analytics"
+  }
+}

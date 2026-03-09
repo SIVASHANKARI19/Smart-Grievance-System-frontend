@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "login": "लॉगिन",
+    "register": "पंजीकरण",
+    "logout": "लॉगआउट",
+    "language": "भाषा"
+  },
+  "submit": {
+    "title": "नई शिकायत दर्ज करें",
+    "subtitle": "सभी विवरण स्पष्ट रूप से भरें ताकि संबंधित विभाग आपकी समस्या जल्दी हल कर सके।",
+    "fieldTitle": "शीर्षक",
+    "fieldTitlePlaceholder": "उदा. मुख्य सड़क पर टूटी हुई स्ट्रीट लाइट",
+    "fieldDescription": "विस्तृत विवरण",
+    "fieldDescriptionPlaceholder": "समस्या का विवरण दें, यह कब से है, यह भी बताएं...",
+    "fieldAddress": "पता / स्थान का विवरण",
+    "fieldAddressPlaceholder": "उदा. गेट 4 के पास, राजा स्ट्रीट, वार्ड 5",
+    "fieldContact": "संपर्क नंबर",
+    "fieldContactPlaceholder": "आपका 10 अंकों का मोबाइल नंबर",
+    "fieldDetectLocation": "मेरी GPS स्थिति पहचानें",
+    "fieldDetecting": "पहचान हो रही है...",
+    "fieldLocationDetected": "स्थान पहचाना गया",
+    "fieldPhoto": "फोटो संलग्न करें (वैकल्पिक)",
+    "fieldPhotoHint": "तेज़ वर्गीकरण के लिए शिकायत की फोटो अपलोड करें।",
+    "btnCancel": "रद्द करें",
+    "btnSubmit": "शिकायत दर्ज करें",
+    "btnSubmitting": "दर्ज हो रहा है...",
+    "successMsg": "शिकायत सफलतापूर्वक दर्ज हुई! पुनर्निर्देशित हो रहे हैं...",
+    "locationError": "स्थान का पता नहीं चला। कृपया पता मैन्युअल रूप से दर्ज करें।"
+  },
+  "dashboard": {
+    "citizen": "नागरिक डैशबोर्ड",
+    "officer": "अधिकारी डैशबोर्ड",
+    "admin": "सिस्टम अवलोकन",
+    "total": "कुल रिपोर्ट",
+    "pending": "लंबित",
+    "resolved": "हल किया गया",
+    "inProgress": "प्रक्रियाधीन",
+    "recentGrievances": "हाल की शिकायतें"
+  },
+  "sidebar": {
+    "dashboard": "डैशबोर्ड",
+    "submitGrievance": "शिकायत दर्ज करें",
+    "myGrievances": "मेरी शिकायतें",
+    "analytics": "विश्लेषण"
+  }
+}
