@@ -4,6 +4,7 @@ import { grievanceService } from '../../services/grievanceService';
 import DashboardCard from '../../components/DashboardCard';
 import { FileText, Clock, CheckCircle } from 'lucide-react';
 
+
 const CitizenDashboard = () => {
   const { user } = useContext(AuthContext);
   const [stats, setStats] = useState({ total: 0, pending: 0, resolved: 0, inProgress: 0 });
