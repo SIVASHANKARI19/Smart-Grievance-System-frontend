@@ -4,6 +4,7 @@ import { AuthContext } from '../../context/AuthContext';
 import { authService } from '../../services/authService';
 import { decodeToken } from '../../utils/decodeToken';
 
+
 const Shape = ({ className }) => (
   <div className={`absolute rounded-2xl opacity-60 ${className}`} />
 );
