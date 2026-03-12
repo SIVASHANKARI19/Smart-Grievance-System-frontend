@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { authService } from '../../services/authService';
 
-
 const departments = [
   'Water Supply',
   'Electricity',
