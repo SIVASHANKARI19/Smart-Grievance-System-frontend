@@ -6,7 +6,7 @@ import { FileText, Clock, CheckCircle, Download, LayoutDashboard } from 'lucide-
 import { exportGrievancesToCsv } from '../../utils/exportCsv';
 
 const AdminDashboard = () => {
-  const [grievances, setGrievances] = useState([]);
+  const [grievances , setGrievances] = useState([]);
   const [stats, setStats] = useState({ total: 0, pending: 0, resolved: 0, inProgress: 0 });
   const [loading, setLoading] = useState(true);
 
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
   );
 
   return (
-    <div className="p-8 :bg-gray-900 min-h-screen transition-colors duration-300">
+     <div className="p-8 :bg-gray-900 min-h-screen transition-colors duration-300">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
         <div>
           <h1 className="text-4xl font-black text-gray-900 :text-gray-100 tracking-tight flex items-center gap-3">
@@ -61,7 +61,7 @@ const AdminDashboard = () => {
           className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 :bg-indigo-700 :hover:bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg shadow-indigo-200 :shadow-none transition-all active:scale-95"
         >
           <Download size={18} />
-          Export CSV Data
+           Export CSV Data
         </button>
       </div>
       
