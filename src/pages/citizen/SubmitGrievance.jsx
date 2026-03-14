@@ -17,10 +17,10 @@ const translateToEnglish = async (text, sourceLang) => {
 
   try {
     // MyMemory supports: ta (Tamil), ml (Malayalam), hi (Hindi)
-     const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|en`;
-     const res = await fetch(url);
+    const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|en`;
+    const res = await fetch(url);
     const data = await res.json();
-     const translated = data?.responseData?.translatedText;
+    const translated = data?.responseData?.translatedText;
     // If translation is garbage or empty, fall back to original text
     return translated && translated.trim() ? translated : text;
   } catch {
