@@ -18,12 +18,13 @@ const OfficerDashboard = () => {
 
   const fetchGrievances = async () => {
     try {
-      setLoading(true);
+      
+       setLoading(true);
       const dept = user?.department || 'Water Supply'; 
-      const data = await grievanceService.getByDepartment(dept);
+       const data = await grievanceService.getByDepartment(dept);
       
       const sorted = data.sort((a, b) => (b.priorityScore || 0) - (a.priorityScore || 0));
-      setGrievances(sorted);
+       setGrievances(sorted);
     } catch (err) {
       console.error("Failed to load grievances", err);
     } finally {
@@ -32,19 +33,19 @@ const OfficerDashboard = () => {
   };
 
   useEffect(() => {
-    if (user) fetchGrievances();
+     if (user) fetchGrievances();
     // eslint-disable-next-line
   }, [user]);
 
   const handleOpenModal = (grievance) => {
-    setSelectedGrievance(grievance);
+     setSelectedGrievance(grievance);
     setNewStatus(grievance.status);
     setIsModalOpen(true);
   };
 
   const handleUpdateStatus = async (e) => {
     e.preventDefault();
-    if (!selectedGrievance) return;
+     if (!selectedGrievance) return;
     
     setUpdateLoading(true);
     try {
