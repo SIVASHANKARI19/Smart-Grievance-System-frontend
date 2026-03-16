@@ -10,6 +10,8 @@ const departments = [
   'Health',
   'Education',
   'Agriculture',
+  'Environment',
+  'Waste Management',
 ];
 
 const Shape = ({ className }) => (
