@@ -31,9 +31,9 @@ ChartJS.register(
 );
 
 const Analytics = () => {
-   const [loading, setLoading] = useState(true);
-   const [grievances, setGrievances] = useState([]);
-   const [trendData, setTrendData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [grievances, setGrievances] = useState([]);
+  const [trendData, setTrendData] = useState(null);
   const [deptData, setDeptData] = useState(null);
   const [catData, setCatData] = useState(null);
   const [spikeAlert, setSpikeAlert] = useState(null);
