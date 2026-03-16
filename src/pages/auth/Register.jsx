@@ -8,7 +8,8 @@ const departments = [
   'Roads & Infrastructure',
   'Sanitation',
   'Health',
-  'Education'
+  'Education',
+  'Agriculture',
 ];
 
 const Shape = ({ className }) => (
