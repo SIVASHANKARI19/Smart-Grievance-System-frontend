@@ -6,7 +6,7 @@ import {
   FileText, User, Calendar, Image as ImageIcon, Info, CheckCircle2, Clock
 } from 'lucide-react';
 
-zzconst priorityColor = (score) => {
+const priorityColor = (score) => {
   if (score >= 70) return 'bg-red-100 :bg-red-900/30 text-red-700 :text-red-300 border-red-200 :border-red-800';
   if (score >= 40) return 'bg-orange-100 :bg-orange-900/30 text-orange-700 :text-orange-300 border-orange-200 :border-orange-800';
   if (score >= 20) return 'bg-yellow-100 :bg-yellow-900/30 text-yellow-700 :text-yellow-300 border-yellow-200 :border-yellow-800';
