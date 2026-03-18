@@ -2,6 +2,7 @@ import api from './api';
 import axios from 'axios';
 
 export const grievanceService = {
+  
   classify: async (description, repeatCount = 1) => {
     // Call the AI Classification API via Vite proxy to avoid CORS
     const response = await axios.post('/classify', {
