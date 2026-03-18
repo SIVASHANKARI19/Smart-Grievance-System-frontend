@@ -110,7 +110,14 @@ const AppRoutes = () => {
   }
 />
 
-
+<Route
+  path="/register"
+  element={
+    token && role
+      ? <Navigate to={`/${role}/dashboard`} replace />
+      : <Register />
+  }
+/>
 
           {/* Protected Routes Wrapper mapped to layout */}
           <Route element={<DashboardLayout />}>
