@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { LayoutDashboard, FileText, PlusCircle, PieChart } from 'lucide-react';
 
-const Sidebar = () => {
-  const { role } = useContext(AuthContext);
+ const Sidebar = () => {
+   const { role } = useContext(AuthContext);
 
-  let links = [];
+   let links = [];
 
-  if (role === 'citizen') {
+   if (role === 'citizen') {
     links = [
       { name: 'Dashboard', path: '/citizen/dashboard', icon: LayoutDashboard },
       { name: 'Submit Grievance', path: '/citizen/submit', icon: PlusCircle },
