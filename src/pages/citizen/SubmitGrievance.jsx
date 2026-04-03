@@ -171,8 +171,8 @@ const SubmitGrievance = () => {
       await grievanceService.create({
         ...grievancePayload,
         department: aiResult.department,
-        priorityScore: aiResult.priority_score,
-        priorityLevel: aiResult.priority_level,
+        priorityScore: aiResult.priority,
+        priority: aiResult.priorityScore,
         category: aiResult.category,
       });
 
