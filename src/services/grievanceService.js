@@ -1,17 +1,30 @@
 import api from './api';
 import axios from 'axios';
 
+// AI base URL from environment
+const AI_URL = import.meta.env.VITE_AI_URL || 'http://localhost:5000';
+
 export const grievanceService = {
-  
+
   classify: async (description, repeatCount = 1) => {
-    // Call the AI Classification API via Vite proxy to avoid CORS
-    const response = await axios.post('/classify', {
-      description,
-      repeatCount
-    }, {
-      headers: { 'Content-Type': 'application/json' }
-    });
-    return response.data;
+    try {
+      const response = await axios.post(
+        `${AI_URL}/classify`,
+        {
+          description,
+          repeatCount
+        },
+        {
+          headers: { 'Content-Type': 'application/json' }
+        }
+      );
+
+      return response.data;
+
+    } catch (error) {
+      console.error("AI classify error:", error);
+      throw error;
+    }
   },
 
   create: async (data) => {
@@ -29,13 +42,12 @@ export const grievanceService = {
     return response.data;
   },
   
-  // Fetch only the count of grievances for a department (used for repeatCount calculation)
   getCountByDepartment: async (dept) => {
     try {
       const response = await api.get(`/grievances/department/${encodeURIComponent(dept)}`);
       return Array.isArray(response.data) ? response.data.length : 0;
     } catch {
-      return 0; // If it fails, gracefully fall back to 0
+      return 0;
     }
   },
 
