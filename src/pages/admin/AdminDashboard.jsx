@@ -77,7 +77,7 @@ const AdminDashboard = () => {
     setAddSuccess('');
     setFormLoading(true);
     try {
-      const res = await fetch(`${API_URL}/api/officers/add`, {
+      const res = await fetch(`${API_URL}/officers/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ const AdminDashboard = () => {
   const handleDeleteOfficer = async (id, name) => {
     if (!window.confirm(`Remove officer ${name}?`)) return;
     try {
-      const res = await fetch(`${API_URL}/api/officers/${id}`, {
+      const res = await fetch(`${API_URL}/officers/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` }
       });
