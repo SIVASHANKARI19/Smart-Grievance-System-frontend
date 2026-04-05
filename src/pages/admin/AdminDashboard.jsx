@@ -55,7 +55,7 @@ const AdminDashboard = () => {
   const fetchOfficers = async () => {
     setOfficerLoading(true);
     try {
-      const res = await fetch(`${API_URL}/api/officers/all`, {
+      const res = await fetch(`${API_URL}/officers/all`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       const data = await res.json();
